@@ -3,538 +3,765 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dodda Jashwanth Sai | AI Engineer</title>
+    <title>Dodda Jashwanth Sai | AI Engineer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Chakra+Petch:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- CRT Screen Effect -->
-    <div class="crt-overlay"></div>
-    <div class="scanlines"></div>
-    
-    <!-- Background Grid -->
-    <div class="grid-background"></div>
-    
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Terminal Header -->
-        <header class="terminal-header">
-            <div class="terminal-controls">
-                <span class="control-dot red"></span>
-                <span class="control-dot yellow"></span>
-                <span class="control-dot green"></span>
-            </div>
-            <div class="terminal-title">NEURAL_INTERFACE_v2.5.1</div>
-            <div class="system-status">
-                <span class="status-indicator">●</span>
-                <span class="status-text">ONLINE</span>
-            </div>
-        </header>
-
-        <!-- Main Content -->
-        <main class="terminal-content">
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="glitch-wrapper">
-                    <h1 class="glitch" data-text="DODDA JASHWANTH SAI">DODDA JASHWANTH SAI</h1>
-                </div>
-                <div class="subtitle-wrapper">
-                    <span class="prompt">$</span>
-                    <span class="typing-text" id="subtitle"></span>
-                    <span class="cursor">█</span>
-                </div>
-                
-                <div class="contact-grid">
-                    <a href="mailto:jashwanthsai678@gmail.com" class="contact-link">
-                        <span class="icon">📧</span>
-                        <span>jashwanthsai678@gmail.com</span>
-                    </a>
-                    <a href="tel:+919177528667" class="contact-link">
-                        <span class="icon">📱</span>
-                        <span>+91 91775 28667</span>
-                    </a>
-                    <a href="https://linkedin.com/in/djashwanthsai96" target="_blank" class="contact-link">
-                        <span class="icon">💼</span>
-                        <span>linkedin.com/in/djashwanthsai96</span>
-                    </a>
-                    <a href="https://github.com/jashwanthsai678" target="_blank" class="contact-link">
-                        <span class="icon">🔗</span>
-                        <span>github.com/jashwanthsai678</span>
-                    </a>
-                </div>
-            </section>
-
-            <!-- Education Section -->
-            <section class="section" data-section="education">
-                <div class="section-header">
-                    <span class="prompt">~/education</span>
-                    <h2 class="section-title">&gt; ACADEMIC_CREDENTIALS</h2>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <span class="card-icon">🎓</span>
-                        <h3>B.Tech in Computer Science (AI & ML)</h3>
-                    </div>
-                    <div class="card-content">
-                        <p><strong>Institution:</strong> Marri Laxman Reddy Institute of Technology and Management</p>
-                        <p><strong>Duration:</strong> 2021 – 2025</p>
-                        <p><strong>CGPA:</strong> <span class="highlight">7.7 / 10</span></p>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 77%"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="section" data-section="skills">
-                <div class="section-header">
-                    <span class="prompt">~/skills</span>
-                    <h2 class="section-title">&gt; TECHNICAL_ARSENAL</h2>
-                </div>
-                
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">⚡</span>
-                            PROGRAMMING
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">C</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">🧠</span>
-                            AI/ML & DEEP LEARNING
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">Scikit-learn</span>
-                            <span class="skill-tag">Keras</span>
-                            <span class="skill-tag">MLOps</span>
-                            <span class="skill-tag">NLP</span>
-                            <span class="skill-tag">Computer Vision</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">🤖</span>
-                            NLP & GENERATIVE AI
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">LLM</span>
-                            <span class="skill-tag">Prompt Engineering</span>
-                            <span class="skill-tag">LangChain</span>
-                            <span class="skill-tag">RAG</span>
-                            <span class="skill-tag">Fine-tuning</span>
-                            <span class="skill-tag">Multi-model Systems</span>
-                            <span class="skill-tag">Vector Databases</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">⚙️</span>
-                            BACKEND & FRAMEWORKS
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">ASP.NET Core</span>
-                            <span class="skill-tag">.NET 6/7/8</span>
-                            <span class="skill-tag">Flask</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">FastAPI</span>
-                            <span class="skill-tag">RESTful APIs</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">🔧</span>
-                            AI TOOLS
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">ChatGPT</span>
-                            <span class="skill-tag">Claude</span>
-                            <span class="skill-tag">Gemini</span>
-                            <span class="skill-tag">VS Code</span>
-                            <span class="skill-tag">AntiGravity</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">☁️</span>
-                            DATABASES & CLOUD
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Microsoft SQL Server</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">Google Cloud Platform</span>
-                            <span class="skill-tag">AWS (Basic)</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <span class="category-icon">📚</span>
-                            FOUNDATIONS
-                        </h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Data Structures & Algorithms (DSA)</span>
-                            <span class="skill-tag">System Design</span>
-                            <span class="skill-tag">OOP</span>
-                            <span class="skill-tag">Operating Systems</span>
-                            <span class="skill-tag">Computer Networks</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section class="section" data-section="experience">
-                <div class="section-header">
-                    <span class="prompt">~/experience</span>
-                    <h2 class="section-title">&gt; WORK_HISTORY</h2>
-                </div>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="job-header">
-                                <h3>Junior AI Engineer</h3>
-                                <span class="job-duration">Jan 2026 – June 2026</span>
-                            </div>
-                            <p class="company">VitaInspire Private Limited</p>
-                            <ul class="achievements">
-                                <li>Built real-time AI solutions for agriculture domain including silage quality detection and yield optimization systems</li>
-                                <li>Developed AI-integrated healthcare solutions with advanced predictive models and intelligent chatbot systems</li>
-                                <li>Created custom educational domain chatbot with NLP capabilities and contextual understanding</li>
-                                <li>Implemented multi-model AI architectures combining Deep Learning, NLP, and traditional ML approaches</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section class="section" data-section="projects">
-                <div class="section-header">
-                    <span class="prompt">~/projects</span>
-                    <h2 class="section-title">&gt; FEATURED_BUILDS</h2>
-                </div>
-                
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🔮</span>
-                            <h3>Custom Large Language Model</h3>
-                            <span class="project-year">2025</span>
-                        </div>
-                        <p class="project-description">
-                            Trained foundational LLM from scratch using PyTorch and Transformers library. 
-                            Implemented attention mechanisms, tokenization, and training pipeline for custom NLP tasks.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Transformers</span>
-                            <span class="tag">NLP</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🏥</span>
-                            <h3>Health Prediction System</h3>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <p class="project-description">
-                            Flask-based web application that predicts heart disease, diabetes, and cancer with 85%+ accuracy. 
-                            Utilized Random Forest and SVM algorithms with comprehensive feature engineering.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">Random Forest</span>
-                            <span class="tag">SVM</span>
-                            <span class="tag">85%+ Accuracy</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">💰</span>
-                            <h3>Financial Management Agent</h3>
-                            <span class="project-year">2024</span>
-                        </div>
-                        <p class="project-description">
-                            AI-powered expense categorization and budget forecasting system. 
-                            Processed 3 months of transaction data to provide predictive savings insights and spending patterns.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">AI</span>
-                            <span class="tag">Forecasting</span>
-                            <span class="tag">Data Analysis</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🌾</span>
-                            <h3>Agriculture Yield & Quality Model</h3>
-                            <span class="project-year">2026</span>
-                        </div>
-                        <p class="project-description">
-                            Multi-model system combining Deep Learning, NLP, and ML for crop yield prediction and quality assessment. 
-                            Built from scratch with real field data collection and validation.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Deep Learning</span>
-                            <span class="tag">Multi-model</span>
-                            <span class="tag">Agriculture</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-header">
-                            <span class="project-icon">🩺</span>
-                            <h3>AI Healthcare Application</h3>
-                            <span class="project-year">2026</span>
-                        </div>
-                        <p class="project-description">
-                            Enhanced full-stack healthcare platform with integrated AI services, intelligent chatbots, 
-                            and improved UI/UX. Implemented advanced medical prediction models and patient interaction systems.
-                        </p>
-                        <div class="project-tags">
-                            <span class="tag">Full-stack</span>
-                            <span class="tag">AI Chatbot</span>
-                            <span class="tag">Healthcare</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Certifications Section -->
-            <section class="section" data-section="certifications">
-                <div class="section-header">
-                    <span class="prompt">~/certifications</span>
-                    <h2 class="section-title">&gt; CREDENTIALS</h2>
-                </div>
-                
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <span class="cert-icon">📜</span>
-                        <div class="cert-content">
-                            <h4>Machine Learning</h4>
-                            <p>Great Learning</p>
-                        </div>
-                    </div>
-                    <div class="cert-item">
-                        <span class="cert-icon">📜</span>
-                        <div class="cert-content">
-                            <h4>Artificial Intelligence</h4>
-                            <p>Metvy Learning</p>
-                        </div>
-                    </div>
-                    <div class="cert-item">
-                        <span class="cert-icon">📜</span>
-                        <div class="cert-content">
-                            <h4>Professional Cybersecurity</h4>
-                            <p>Google (Coursera)</p>
-                        </div>
-                    </div>
-                    <div class="cert-item">
-                        <span class="cert-icon">📜</span>
-                        <div class="cert-content">
-                            <h4>Data Science</h4>
-                            <p>Simplilearn</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Achievements Section -->
-            <section class="section" data-section="achievements">
-                <div class="section-header">
-                    <span class="prompt">~/achievements</span>
-                    <h2 class="section-title">&gt; MILESTONES</h2>
-                </div>
-                
-                <div class="achievements-grid">
-                    <div class="achievement-card">
-                        <span class="achievement-icon">🏆</span>
-                        <p class="achievement-text">
-                            <strong>National Innovation Bootcamp 2024</strong><br>
-                            Selected among top innovators nationwide for advanced AI/ML bootcamp
-                        </p>
-                    </div>
-                    <div class="achievement-card">
-                        <span class="achievement-icon">💻</span>
-                        <p class="achievement-text">
-                            <strong>300+ Coding Problems Solved</strong><br>
-                            Mastered algorithmic challenges across LeetCode, CodeChef, and HackerRank
-                        </p>
-                    </div>
-                    <div class="achievement-card">
-                        <span class="achievement-icon">🎤</span>
-                        <p class="achievement-text">
-                            <strong>Google developers student club GDSC Mentor & Workshop Conductor</strong><br>
-                            Organized hackathons and conducted AI/ML workshops for student community
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Languages Section -->
-            <section class="section" data-section="languages">
-                <div class="section-header">
-                    <span class="prompt">~/languages</span>
-                    <h2 class="section-title">&gt; COMMUNICATION</h2>
-                </div>
-                
-                <div class="language-card">
-                    <div class="language-icon">🌐</div>
-                    <h3>English</h3>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer>
-            <p class="footer-text">
-                Built with <span class="footer-highlight">AI/ML</span> • Designed with <span class="footer-highlight">Neural Networks</span>
-            </p>
-            <p class="footer-text">
-                © 2026 Dodda Jashwanth Sai • <span class="footer-highlight">Junior AI Engineer</span>
-            </p>
-        </footer>
+    <!-- 3D Background Elements -->
+    <div class="bg-container">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
     </div>
 
-    <!-- JavaScript -->
-    <script>
-        // Typing Animation for Subtitle
-        const subtitleText = "Junior AI Engineer | ML Specialist | Full-Stack Developer | Cloud Engineer";
-        const subtitleElement = document.getElementById('subtitle');
-        let charIndex = 0;
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">DJ</span>
+                <span class="logo-subtitle">AI Engineer</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link cta-button">Let's Talk</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-        function typeSubtitle() {
-            if (charIndex < subtitleText.length) {
-                subtitleElement.textContent += subtitleText.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeSubtitle, 100);
-            }
-        }
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Opportunities
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hi, I'm</span>
+                <span class="title-name">Dodda Jashwanth Sai</span>
+                <span class="title-role">AI Engineer & ML Specialist</span>
+            </h1>
+            <p class="hero-description">
+                Transforming complex data into intelligent solutions. Specialized in building 
+                production-ready AI systems, from LLMs to computer vision, with proven results 
+                in healthcare and agriculture domains.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Download Resume</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3V17M10 17L16 11M10 17L4 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>View Projects</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Months Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">AI Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Problems Solved</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">85%+</div>
+                    <div class="stat-label">Model Accuracy</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="profile-card-3d">
+                <div class="card-face card-front">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                                <circle cx="60" cy="45" r="20" fill="currentColor" opacity="0.2"/>
+                                <path d="M30 95C30 78 42 65 60 65C78 65 90 78 90 95" stroke="currentColor" stroke-width="4" opacity="0.2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Dodda Jashwanth Sai</h3>
+                        <p>Junior AI Engineer</p>
+                        <div class="profile-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-icons">
+                <div class="icon-item" style="--delay: 0s">🧠</div>
+                <div class="icon-item" style="--delay: 0.5s">⚡</div>
+                <div class="icon-item" style="--delay: 1s">🚀</div>
+                <div class="icon-item" style="--delay: 1.5s">💡</div>
+            </div>
+        </div>
+    </section>
 
-        // Start typing animation when page loads
-        window.addEventListener('load', () => {
-            setTimeout(typeSubtitle, 500);
-        });
+    <!-- Quick Contact Bar -->
+    <div class="contact-bar">
+        <a href="mailto:jashwanthsai678@gmail.com" class="contact-item" data-tooltip="Email me">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>jashwanthsai678@gmail.com</span>
+        </a>
+        <a href="tel:+919177528667" class="contact-item" data-tooltip="Call me">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>+91 91775 28667</span>
+        </a>
+        <a href="https://linkedin.com/in/djashwanthsai96" target="_blank" class="contact-item" data-tooltip="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8V8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/jashwanthsai678" target="_blank" class="contact-item" data-tooltip="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 19C4 20.5 4 16.5 2 16M16 22V18.13C16.0375 17.6532 15.9731 17.1738 15.811 16.7238C15.6489 16.2738 15.3929 15.8634 15.06 15.52C18.2 15.17 21.5 13.98 21.5 8.52C21.4997 7.12383 20.9627 5.7812 20 4.77C20.4559 3.54851 20.4236 2.19835 19.91 1C19.91 1 18.73 0.65 16 2.48C13.708 1.85882 11.292 1.85882 9 2.48C6.27 0.65 5.09 1 5.09 1C4.57638 2.19835 4.54414 3.54851 5 4.77C4.03013 5.7887 3.49252 7.14346 3.5 8.55C3.5 13.97 6.8 15.16 9.94 15.55C9.611 15.89 9.35726 16.2954 9.19531 16.7399C9.03335 17.1844 8.96681 17.6581 9 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>GitHub</span>
+        </a>
+    </div>
 
-        // Smooth scroll reveal for sections
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-description">Building AI solutions that drive real business impact</p>
+            </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="exp-date">
+                        <span class="date-badge">Jan 2026 - Jun 2026</span>
+                        <span class="status-badge">Current</span>
+                    </div>
+                    <div class="exp-content">
+                        <h3 class="exp-title">Junior AI Engineer</h3>
+                        <p class="exp-company">VitaInspire Private Limited</p>
+                        <ul class="exp-highlights">
+                            <li>
+                                <span class="highlight-icon">🎯</span>
+                                <div>
+                                    <strong>Agriculture AI:</strong> Developed real-time silage quality detection system achieving 90%+ accuracy, optimizing yield predictions for farming operations
+                                </div>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">🏥</span>
+                                <div>
+                                    <strong>Healthcare Innovation:</strong> Built AI-powered predictive models and intelligent chatbot systems improving patient interaction efficiency by 40%
+                                </div>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">🤖</span>
+                                <div>
+                                    <strong>NLP Solutions:</strong> Created custom educational chatbot with contextual understanding, handling 1000+ queries with 85% satisfaction rate
+                                </div>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">⚡</span>
+                                <div>
+                                    <strong>Multi-Model Architecture:</strong> Implemented hybrid AI systems combining Deep Learning, NLP, and traditional ML for production deployment
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="exp-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">MLOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        // Observe all sections
-        document.querySelectorAll('.section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
-            observer.observe(section);
-        });
+            <!-- Education Card -->
+            <div class="education-card">
+                <div class="edu-header">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-info">
+                        <h3>B.Tech in Computer Science (AI & ML)</h3>
+                        <p>Marri Laxman Reddy Institute of Technology and Management</p>
+                        <div class="edu-meta">
+                            <span>2021 - 2025</span>
+                            <span class="separator">•</span>
+                            <span class="cgpa">CGPA: 7.7/10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        // Add neural network particle effect on mouse move
-        let particles = [];
-        const particleCount = 3;
-        
-        document.addEventListener('mousemove', (e) => {
-            if (Math.random() > 0.95) {
-                createParticle(e.clientX, e.clientY);
-            }
-        });
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Real-world AI applications solving complex problems</p>
+            </div>
 
-        function createParticle(x, y) {
-            const particle = document.createElement('div');
-            particle.style.position = 'fixed';
-            particle.style.left = x + 'px';
-            particle.style.top = y + 'px';
-            particle.style.width = '4px';
-            particle.style.height = '4px';
-            particle.style.background = 'var(--accent-primary)';
-            particle.style.borderRadius = '50%';
-            particle.style.pointerEvents = 'none';
-            particle.style.zIndex = '999';
-            particle.style.boxShadow = '0 0 10px var(--accent-primary)';
-            particle.style.animation = 'particleFade 1s ease-out forwards';
-            
-            document.body.appendChild(particle);
-            
-            setTimeout(() => {
-                particle.remove();
-            }, 1000);
-        }
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-number">01</div>
+                        <div class="project-icon">🔮</div>
+                        <h3 class="project-title">Custom Large Language Model</h3>
+                        <p class="project-description">
+                            Built foundational LLM from scratch using PyTorch with custom attention 
+                            mechanisms and tokenization pipeline. Achieved competitive performance on 
+                            domain-specific NLP tasks.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">12M</span>
+                                <span class="metric-label">Parameters</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2025</span>
+                                <span class="metric-label">Year</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>NLP</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="#" class="link-arrow">
+                                View Details
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        // Add particle animation CSS
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes particleFade {
-                0% {
-                    opacity: 1;
-                    transform: translate(0, 0) scale(1);
-                }
-                100% {
-                    opacity: 0;
-                    transform: translate(${Math.random() * 40 - 20}px, ${Math.random() * 40 - 20}px) scale(0);
-                }
-            }
-        `;
-        document.head.appendChild(style);
+                <!-- Project 2 -->
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-number">02</div>
+                        <div class="project-icon">🌾</div>
+                        <h3 class="project-title">Agriculture AI System</h3>
+                        <p class="project-description">
+                            Multi-model solution combining Deep Learning and ML for crop yield prediction 
+                            and silage quality assessment. Deployed in real farming environments with 
+                            proven accuracy improvements.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">90%+</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2026</span>
+                                <span class="metric-label">Year</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>IoT</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="#" class="link-arrow">
+                                View Details
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        // Matrix rain effect on scroll
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const gridBg = document.querySelector('.grid-background');
-            if (gridBg) {
-                gridBg.style.transform = `translate(${scrolled * 0.05}px, ${scrolled * 0.05}px)`;
-            }
-        });
+                <!-- Project 3 -->
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-number">03</div>
+                        <div class="project-icon">🏥</div>
+                        <h3 class="project-title">Health Prediction System</h3>
+                        <p class="project-description">
+                            Flask-based ML application predicting heart disease, diabetes, and cancer 
+                            with 85%+ accuracy. Implements Random Forest and SVM with comprehensive 
+                            feature engineering.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">85%+</span>
+                                <span class="metric-label">Accuracy</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2024</span>
+                                <span class="metric-label">Year</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Flask</span>
+                            <span>Scikit-learn</span>
+                            <span>ML</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="#" class="link-arrow">
+                                View Details
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        // Glitch effect on hover for project cards
-        document.querySelectorAll('.project-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.animation = 'glitchCard 0.3s ease';
-            });
-        });
+                <!-- Project 4 -->
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-number">04</div>
+                        <div class="project-icon">🩺</div>
+                        <h3 class="project-title">AI Healthcare Platform</h3>
+                        <p class="project-description">
+                            Full-stack healthcare solution with integrated AI chatbot, medical prediction 
+                            models, and enhanced patient interaction system. Improved UI/UX for better 
+                            user engagement.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Efficiency ↑</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2026</span>
+                                <span class="metric-label">Year</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>Full-stack</span>
+                            <span>NLP</span>
+                            <span>AI Chatbot</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="#" class="link-arrow">
+                                View Details
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        const glitchStyle = document.createElement('style');
-        glitchStyle.textContent = `
-            @keyframes glitchCard {
-                0%, 100% { transform: translateY(0); }
-                25% { transform: translate(-2px, -2px); }
-                50% { transform: translate(2px, 2px); }
-                75% { transform: translate(-2px, 2px); }
-            }
-        `;
-        document.head.appendChild(glitchStyle);
-    </script>
+                <!-- Project 5 -->
+                <div class="project-card-3d">
+                    <div class="project-card-inner">
+                        <div class="project-number">05</div>
+                        <div class="project-icon">💰</div>
+                        <h3 class="project-title">Financial Management Agent</h3>
+                        <p class="project-description">
+                            AI-powered expense categorization and budget forecasting system processing 
+                            3 months of transaction data. Provides predictive insights and spending patterns.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric">
+                                <span class="metric-value">3M</span>
+                                <span class="metric-label">Data Points</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">2024</span>
+                                <span class="metric-label">Year</span>
+                            </div>
+                        </div>
+                        <div class="project-tech">
+                            <span>AI/ML</span>
+                            <span>Data Analysis</span>
+                            <span>Forecasting</span>
+                        </div>
+                        <div class="project-link">
+                            <a href="#" class="link-arrow">
+                                View Details
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-description">Production-ready tech stack for building AI solutions</p>
+            </div>
+
+            <div class="skills-container">
+                <!-- Core AI/ML -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">🧠</div>
+                        <h3>AI/ML & Deep Learning</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item expert">
+                            <span class="skill-name">TensorFlow</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item expert">
+                            <span class="skill-name">PyTorch</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">Scikit-learn</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">Keras</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item intermediate">
+                            <span class="skill-name">MLOps</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NLP & Gen AI -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">🤖</div>
+                        <h3>NLP & Generative AI</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item expert">
+                            <span class="skill-name">LLM Development</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">LangChain</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">RAG Systems</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item intermediate">
+                            <span class="skill-name">Fine-tuning</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-item intermediate">
+                            <span class="skill-name">Vector Databases</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">⚡</div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item expert">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">C#</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item intermediate">
+                            <span class="skill-name">C</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & APIs -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">⚙️</div>
+                        <h3>Backend & Frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item advanced">
+                            <span class="skill-name">ASP.NET Core</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">.NET 6/7/8</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item expert">
+                            <span class="skill-name">Flask</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">FastAPI</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Databases -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">☁️</div>
+                        <h3>Cloud & Databases</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item advanced">
+                            <span class="skill-name">Google Cloud Platform</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item intermediate">
+                            <span class="skill-name">AWS</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">SQL Server</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foundations -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <div class="category-icon">📚</div>
+                        <h3>Computer Science Fundamentals</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item expert">
+                            <span class="skill-name">Data Structures & Algorithms</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">System Design</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item advanced">
+                            <span class="skill-name">OOP Principles</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="skill-item intermediate">
+                            <span class="skill-name">Operating Systems</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section class="section achievements-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Recognition</span>
+                <h2 class="section-title">Achievements & Certifications</h2>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card-modern">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>National Innovation Bootcamp 2024</h3>
+                    <p>Selected among top innovators nationwide for advanced AI/ML bootcamp program</p>
+                </div>
+
+                <div class="achievement-card-modern">
+                    <div class="achievement-icon">💻</div>
+                    <h3>300+ Coding Problems Solved</h3>
+                    <p>Strong algorithmic foundation across LeetCode, CodeChef, and HackerRank platforms</p>
+                </div>
+
+                <div class="achievement-card-modern">
+                    <div class="achievement-icon">🎤</div>
+                    <h3>GDSC Mentor & Workshop Conductor</h3>
+                    <p>Led AI/ML workshops and organized hackathons for 500+ students</p>
+                </div>
+            </div>
+
+            <div class="certifications-grid">
+                <div class="cert-badge">
+                    <div class="cert-icon">📜</div>
+                    <div class="cert-info">
+                        <h4>Machine Learning</h4>
+                        <p>Great Learning</p>
+                    </div>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">📜</div>
+                    <div class="cert-info">
+                        <h4>Artificial Intelligence</h4>
+                        <p>Metvy Learning</p>
+                    </div>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">📜</div>
+                    <div class="cert-info">
+                        <h4>Professional Cybersecurity</h4>
+                        <p>Google (Coursera)</p>
+                    </div>
+                </div>
+                <div class="cert-badge">
+                    <div class="cert-icon">📜</div>
+                    <div class="cert-info">
+                        <h4>Data Science</h4>
+                        <p>Simplilearn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Let's Build Something Amazing</h2>
+                    <p class="contact-text">
+                        I'm currently looking for new opportunities to apply my AI/ML expertise. 
+                        Whether you have a project in mind or just want to connect, I'd love to hear from you.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:jashwanthsai678@gmail.com" class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <span class="method-value">jashwanthsai678@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919177528667" class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <span class="method-label">Phone</span>
+                                <span class="method-value">+91 91775 28667</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/djashwanthsai96" class="contact-method" target="_blank">
+                            <div class="method-icon">💼</div>
+                            <div class="method-details">
+                                <span class="method-label">LinkedIn</span>
+                                <span class="method-value">djashwanthsai96</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-visual">
+                    <div class="contact-card-3d">
+                        <div class="floating-elements">
+                            <div class="float-item">🚀</div>
+                            <div class="float-item">💡</div>
+                            <div class="float-item">⚡</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-text">DJ</span>
+                    </div>
+                    <p>Building intelligent solutions for tomorrow's challenges</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/djashwanthsai96" target="_blank" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jashwanthsai678" target="_blank" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dodda Jashwanth Sai. All rights reserved.</p>
+                <p>Designed & Built with passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
-</html
+</html>
