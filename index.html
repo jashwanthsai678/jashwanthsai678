@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodda Jashwanth Sai | AI Backend & LLM Infrastructure Engineer</title>
+    <meta name="description" content="Portfolio of Dodda Jashwanth Sai, Junior AI Engineer specializing in AI backend development, self-hosted LLM infrastructure optimization, and real-time Live Sync RAG pipelines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas for Particle Attention Space Background -->
+    <canvas id="bg-canvas"></canvas>
+    <!-- Terminal log scrolling background -->
+    <canvas id="bg-terminal" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo" id="logo">
+                <span class="logo-accent">&lt;</span>
+                <span class="logo-text">Jashwanth.AI</span>
+                <span class="logo-accent">/&gt;</span>
+            </div>
+            <div class="nav-status-badge">
+                <span class="pulse-dot"></span>
+                <span>Serving Status: Active</span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#playground" class="nav-link">Playground</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link cta-button">Let's Connect</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <!-- BENTO HERO SECTION -->
+        <section class="bento-grid hero-grid" id="about">
+            
+            <!-- Box 1: Core Hero Branding (Large) -->
+            <div class="bento-card hero-main-card">
+                <div class="badge-row">
+                    <span class="bento-badge glow-badge">AI Backend Developer</span>
+                    <span class="bento-badge">LLM Infrastructure Optimizer</span>
+                    <span class="bento-badge">Software Engineer</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name-glow">Dodda Jashwanth Sai</span>
+                </h1>
+                <h2 class="hero-subtitle">Engineering Scalable RAG Pipelines, Generative AI Applications, & High-Performance Serving Infrastructure.</h2>
+                <p class="hero-bio">
+                    AI Engineer with experience building production-grade Generative AI systems, self-hosted LLM platforms, 
+                    multimodal retrieval architectures, and AI-powered SaaS products. Specialized in backend engineering, RAG pipelines, 
+                    and deploying open-source LLMs using vLLM and Hugging Face TGI.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="btn-contact-hero">
+                        <span>Get In Touch</span>
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jashwanthsai678" target="_blank" class="btn btn-secondary" id="btn-github-hero">
+                        <svg class="icon-github" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Box 2: Profile Photo Placeholder / Cyber Visual (Medium) -->
+            <div class="bento-card profile-visual-card">
+                <div class="visual-header">
+                    <div class="window-dot red"></div>
+                    <div class="window-dot yellow"></div>
+                    <div class="window-dot green"></div>
+                    <span class="window-title">identity_service.py</span>
+                </div>
+                <div class="profile-display">
+                    <div class="scanner-line"></div>
+                    <div class="cyber-avatar">
+                        <svg class="pulse-ring" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-primary-glow)" stroke-width="1.5" stroke-dasharray="6, 4"/>
+                        </svg>
+                        <div class="avatar-core">
+                            <span class="avatar-initials">DS</span>
+                        </div>
+                    </div>
+                    <div class="visual-meta">
+                        <div class="meta-line"><span class="label">IP:</span> <span class="val text-glow">127.0.0.1</span></div>
+                        <div class="meta-line"><span class="label">LOC:</span> <span class="val">Hyderabad, IN</span></div>
+                        <div class="meta-line"><span class="label">ROLE:</span> <span class="val text-sage">AI_ENGINEER_V2</span></div>
+                        <div class="meta-line"><span class="label">STATUS:</span> <span class="val text-glow">OPEN_TO_WORK</span></div>
+                    </div>
+                    <div class="auth-key-box">
+                        <button class="btn-generate-key" id="btn-generate-key">Generate API Token</button>
+                        <code class="generated-key-display" id="key-display">sk_jashwanth_xxxxxxxx</code>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- BENTO PLAYGROUND SECTION -->
+        <section class="playground-section" id="playground">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;interactive_sandbox&gt;</span>
+                <h2 class="section-title">AI Playground Console</h2>
+                <p class="section-description">Query my background via the Chat Console, or configure a real LLM inference stack and benchmark it in the Inference Lab.</p>
+            </div>
+
+            <div class="bento-card playground-card">
+                <!-- Terminal Playground -->
+                <div class="playground-layout">
+                    <div class="console-panel">
+                        <div class="console-header">
+                            <div class="console-tabs">
+                                <button class="console-tab active" id="tab-chat" data-tab="chat">
+                                    <span class="tab-icon">💬</span> Chat Console
+                                </button>
+                                <button class="console-tab" id="tab-bench" data-tab="bench">
+                                    <span class="tab-icon">🔬</span> Inference Benchmark Lab
+                                </button>
+                                <button class="console-tab" id="tab-opsim" data-tab="opsim">
+                                    <span class="tab-icon">🧠</span> AI System Simulator
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 1: Chat Terminal -->
+                        <div class="tab-content active" id="content-chat">
+                            <div class="terminal-body" id="terminal-body">
+                                <div class="terminal-line system-msg">
+                                    <span class="term-time">[19:40:21]</span> [SYSTEM] Jashwanth Inference Server loaded successfully.
+                                </div>
+                                <div class="terminal-line system-msg">
+                                    <span class="term-time">[19:40:22]</span> [SYSTEM] Self-hosted Llama-3-8B model instantiated using vLLM engine.
+                                </div>
+                                <div class="terminal-line system-msg-info">
+                                    <span class="term-time">[19:40:22]</span> [INFO] Click one of the prompt chips below to query the platform.
+                                </div>
+                            </div>
+                            <div class="terminal-input-bar">
+                                <span class="prompt-arrow">&gt;&gt;&gt;</span>
+                                <input type="text" class="terminal-input" id="terminal-input" placeholder="Type a prompt or select a chip below..." readonly>
+                                <button class="btn-send-prompt" id="btn-send-prompt">Run Inference</button>
+                            </div>
+                            <div class="prompt-chips">
+                                <button class="chip" data-prompt="bio">Who is Jashwanth Sai?</button>
+                                <button class="chip" data-prompt="skills">List core technical skills</button>
+                                <button class="chip" data-prompt="experience">What did Jashwanth build?</button>
+                                <button class="chip" data-prompt="projects">Summarize his selected projects</button>
+                                <button class="chip" data-prompt="llmserving">How does he serve LLMs in production?</button>
+                                <button class="chip" data-prompt="ragarch">Explain his RAG pipeline design</button>
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 2: Inference Benchmark Lab -->
+                        <div class="tab-content" id="content-bench">
+                            <div class="bench-container">
+
+                                <!-- Left: Config Panel -->
+                                <div class="bench-config-panel">
+                                    <div class="bench-panel-title">// Configure Inference Stack</div>
+
+                                    <div class="bench-group">
+                                        <div class="bench-group-label">Model</div>
+                                        <div class="bench-model-grid">
+                                            <button class="model-sel active" data-model="llama32-3b">
+                                                <span class="model-name">Llama-3.2</span>
+                                                <span class="model-sub">3B Instruct</span>
+                                            </button>
+                                            <button class="model-sel" data-model="mistral-7b">
+                                                <span class="model-name">Mistral</span>
+                                                <span class="model-sub">7B Instruct v0.3</span>
+                                            </button>
+                                            <button class="model-sel" data-model="llama31-8b">
+                                                <span class="model-name">Llama-3.1</span>
+                                                <span class="model-sub">8B Instruct</span>
+                                            </button>
+                                            <button class="model-sel" data-model="gemma2-9b">
+                                                <span class="model-name">Gemma 2</span>
+                                                <span class="model-sub">9B Instruct</span>
+                                            </button>
+                                            <button class="model-sel" data-model="mixtral-8x7b">
+                                                <span class="model-name">Mixtral</span>
+                                                <span class="model-sub">8x7B MoE</span>
+                                            </button>
+                                            <button class="model-sel" data-model="llama31-70b">
+                                                <span class="model-name">Llama-3.1</span>
+                                                <span class="model-sub">70B Instruct</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="bench-group">
+                                        <div class="bench-group-label">Hardware Tier</div>
+                                        <div class="bench-hw-grid">
+                                            <button class="hw-sel" data-hw="rtx4090">
+                                                <span class="hw-name">RTX 4090</span>
+                                                <span class="hw-sub">24 GB GDDR6X · $0.89/hr</span>
+                                            </button>
+                                            <button class="hw-sel active" data-hw="a10g">
+                                                <span class="hw-name">NVIDIA A10G</span>
+                                                <span class="hw-sub">24 GB GDDR6 · $1.82/hr</span>
+                                            </button>
+                                            <button class="hw-sel" data-hw="l40s">
+                                                <span class="hw-name">L40S</span>
+                                                <span class="hw-sub">48 GB GDDR6 · $3.50/hr</span>
+                                            </button>
+                                            <button class="hw-sel" data-hw="a100-80g">
+                                                <span class="hw-name">A100 SXM 80GB</span>
+                                                <span class="hw-sub">80 GB HBM2e · $4.10/hr</span>
+                                            </button>
+                                            <button class="hw-sel" data-hw="h100">
+                                                <span class="hw-name">H100 SXM</span>
+                                                <span class="hw-sub">80 GB HBM3 · $31.00/hr</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="bench-group">
+                                        <div class="bench-group-label">Serving Optimizations</div>
+                                        <div class="bench-toggles">
+                                            <label class="bench-toggle-row">
+                                                <div class="tog-wrap">
+                                                    <input type="checkbox" id="tog-flash" checked>
+                                                    <span class="tog-track"></span>
+                                                </div>
+                                                <div class="tog-info">
+                                                    <span class="tog-name">Flash Attention 2</span>
+                                                    <span class="tog-hint">Tiled HBM kernel — O(N) attention memory IO vs O(N²)</span>
+                                                </div>
+                                                <span class="tog-badge-pill pos">+18% TPS</span>
+                                            </label>
+                                            <label class="bench-toggle-row">
+                                                <div class="tog-wrap">
+                                                    <input type="checkbox" id="tog-paged" checked>
+                                                    <span class="tog-track"></span>
+                                                </div>
+                                                <div class="tog-info">
+                                                    <span class="tog-name">Paged Attention</span>
+                                                    <span class="tog-hint">KV cache virtual paging — eliminates memory fragmentation</span>
+                                                </div>
+                                                <span class="tog-badge-pill pos">+38% TPS</span>
+                                            </label>
+                                            <label class="bench-toggle-row">
+                                                <div class="tog-wrap">
+                                                    <input type="checkbox" id="tog-prefix" checked>
+                                                    <span class="tog-track"></span>
+                                                </div>
+                                                <div class="tog-info">
+                                                    <span class="tog-name">KV Prefix Caching</span>
+                                                    <span class="tog-hint">Reuse KV tensors for repeated prompt prefixes</span>
+                                                </div>
+                                                <span class="tog-badge-pill pos">+22% TPS</span>
+                                            </label>
+                                            <label class="bench-toggle-row">
+                                                <div class="tog-wrap">
+                                                    <input type="checkbox" id="tog-cont" checked>
+                                                    <span class="tog-track"></span>
+                                                </div>
+                                                <div class="tog-info">
+                                                    <span class="tog-name">Continuous Batching</span>
+                                                    <span class="tog-hint">Mid-flight request scheduling — 90%+ GPU utilization</span>
+                                                </div>
+                                                <span class="tog-badge-pill pos">+60% util</span>
+                                            </label>
+                                            <label class="bench-toggle-row">
+                                                <div class="tog-wrap">
+                                                    <input type="checkbox" id="tog-spec">
+                                                    <span class="tog-track"></span>
+                                                </div>
+                                                <div class="tog-info">
+                                                    <span class="tog-name">Speculative Decoding</span>
+                                                    <span class="tog-hint">Draft model proposes k tokens; target verifies in one pass</span>
+                                                </div>
+                                                <span class="tog-badge-pill pos">+42% TPS</span>
+                                            </label>
+                                            <label class="bench-toggle-row">
+                                                <div class="tog-wrap">
+                                                    <input type="checkbox" id="tog-quant">
+                                                    <span class="tog-track"></span>
+                                                </div>
+                                                <div class="tog-info">
+                                                    <span class="tog-name">INT4 Quantization</span>
+                                                    <span class="tog-hint">GPTQ/AWQ 4-bit weight compression — &lt;1% perplexity loss</span>
+                                                </div>
+                                                <span class="tog-badge-pill warn">−52% VRAM</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="bench-group">
+                                        <div class="bench-group-label">Concurrent Requests: <span id="batch-val" class="bench-accent-val">8</span></div>
+                                        <input type="range" id="batch-slider" min="1" max="32" value="8" class="bench-slider">
+                                        <div class="bench-slider-ticks"><span>1</span><span>8</span><span>16</span><span>32</span></div>
+                                    </div>
+
+                                    <button class="btn-run-bench" id="btn-run-bench">▶ Run Benchmark</button>
+                                </div>
+
+                                <!-- Right: Results Panel -->
+                                <div class="bench-results-panel">
+                                    <div class="bench-idle-state" id="bench-idle">
+                                        <div class="bench-idle-gear">⚙</div>
+                                        <p>Configure your inference stack and run the benchmark to see projected real-world performance metrics.</p>
+                                    </div>
+                                    <div id="bench-live" style="display:none">
+                                        <div class="bench-live-header">
+                                            <span class="bench-stack-label" id="bench-model-label"></span>
+                                            <span class="bench-active-dot"></span>
+                                        </div>
+                                        <div class="bench-metrics-grid">
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">Throughput</div>
+                                                <div class="bmt-value"><span id="bmt-tps-val">0</span><span class="bmt-unit"> tok/s</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar" id="bmt-tps-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="bmt-tps-delta"></div>
+                                            </div>
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">P95 Latency</div>
+                                                <div class="bmt-value"><span id="bmt-lat-val">0</span><span class="bmt-unit"> ms</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar bmt-bar-lat" id="bmt-lat-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="bmt-lat-delta"></div>
+                                            </div>
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">GPU Memory Used</div>
+                                                <div class="bmt-value"><span id="bmt-mem-val">0</span><span class="bmt-unit"> GB</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar bmt-bar-mem" id="bmt-mem-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="bmt-mem-delta"></div>
+                                            </div>
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">Cost Efficiency</div>
+                                                <div class="bmt-value"><span id="bmt-eff-val">0</span><span class="bmt-unit"> M tok/$</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar bmt-bar-eff" id="bmt-eff-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="bmt-eff-delta"></div>
+                                            </div>
+                                        </div>
+                                        <div class="bench-insights" id="bench-insights"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Tab Content 3: AI System Simulator -->
+                        <div class="tab-content" id="content-opsim">
+                            <div class="opsim-container">
+
+                                <!-- Left: Stack Config -->
+                                <div class="opsim-config-panel">
+                                    <div class="bench-panel-title">// Design Your AI Application Stack</div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">API Gateway</div>
+                                        <div class="opsim-layer-btns">
+                                            <button class="layer-btn active" data-layer="gateway" data-val="fastapi"><span class="lbtn-name">FastAPI</span><span class="lbtn-meta">~2ms · free</span></button>
+                                            <button class="layer-btn" data-layer="gateway" data-val="kong"><span class="lbtn-name">Kong GW</span><span class="lbtn-meta">~1ms · $0.05/hr</span></button>
+                                            <button class="layer-btn" data-layer="gateway" data-val="nginx"><span class="lbtn-name">Nginx</span><span class="lbtn-meta">~0.5ms · free</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">Orchestration Layer</div>
+                                        <div class="opsim-layer-btns">
+                                            <button class="layer-btn active" data-layer="orch" data-val="direct"><span class="lbtn-name">Direct Call</span><span class="lbtn-meta">~0ms overhead</span></button>
+                                            <button class="layer-btn" data-layer="orch" data-val="langchain"><span class="lbtn-name">LangChain</span><span class="lbtn-meta">~15ms · chain</span></button>
+                                            <button class="layer-btn" data-layer="orch" data-val="langgraph"><span class="lbtn-name">LangGraph</span><span class="lbtn-meta">~28ms · agents</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">LLM Backend</div>
+                                        <div class="opsim-layer-btns">
+                                            <button class="layer-btn active" data-layer="llm" data-val="vllm"><span class="lbtn-name">vLLM</span><span class="lbtn-meta">self-host · $1.82/hr</span></button>
+                                            <button class="layer-btn" data-layer="llm" data-val="tgi"><span class="lbtn-name">HF TGI</span><span class="lbtn-meta">self-host · $1.82/hr</span></button>
+                                            <button class="layer-btn" data-layer="llm" data-val="openai"><span class="lbtn-name">OpenAI API</span><span class="lbtn-meta">managed · per-token</span></button>
+                                            <button class="layer-btn" data-layer="llm" data-val="ollama"><span class="lbtn-name">Ollama</span><span class="lbtn-meta">local · free</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">Vector Store</div>
+                                        <div class="opsim-layer-btns">
+                                            <button class="layer-btn active" data-layer="vec" data-val="pinecone"><span class="lbtn-name">Pinecone</span><span class="lbtn-meta">~12ms · managed</span></button>
+                                            <button class="layer-btn" data-layer="vec" data-val="milvus"><span class="lbtn-name">Milvus</span><span class="lbtn-meta">~8ms · self-host</span></button>
+                                            <button class="layer-btn" data-layer="vec" data-val="qdrant"><span class="lbtn-name">Qdrant</span><span class="lbtn-meta">~6ms · self-host</span></button>
+                                            <button class="layer-btn" data-layer="vec" data-val="weaviate"><span class="lbtn-name">Weaviate</span><span class="lbtn-meta">~10ms · hybrid</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">Cache Layer</div>
+                                        <div class="opsim-layer-btns">
+                                            <button class="layer-btn active" data-layer="cache" data-val="none"><span class="lbtn-name">No Cache</span><span class="lbtn-meta">0ms</span></button>
+                                            <button class="layer-btn" data-layer="cache" data-val="redis"><span class="lbtn-name">Redis</span><span class="lbtn-meta">~1ms · 35% hits</span></button>
+                                            <button class="layer-btn" data-layer="cache" data-val="semantic"><span class="lbtn-name">Semantic Cache</span><span class="lbtn-meta">~5ms · 55% hits</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">Observability</div>
+                                        <div class="opsim-layer-btns">
+                                            <button class="layer-btn active" data-layer="monitor" data-val="none"><span class="lbtn-name">None</span><span class="lbtn-meta">no overhead</span></button>
+                                            <button class="layer-btn" data-layer="monitor" data-val="prometheus"><span class="lbtn-name">Prometheus+Grafana</span><span class="lbtn-meta">~0.5ms · $0.10/hr</span></button>
+                                            <button class="layer-btn" data-layer="monitor" data-val="otel"><span class="lbtn-name">OpenTelemetry</span><span class="lbtn-meta">~0.3ms · $0.05/hr</span></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">Incoming Traffic: <span id="rps-val" class="bench-accent-val">50</span> req/s</div>
+                                        <input type="range" id="rps-slider" min="1" max="500" value="50" class="bench-slider">
+                                        <div class="bench-slider-ticks"><span>1</span><span>100</span><span>250</span><span>500</span></div>
+                                    </div>
+
+                                    <div class="opsim-layer-group">
+                                        <div class="bench-group-label">Avg Output Tokens: <span id="tok-val" class="bench-accent-val">256</span></div>
+                                        <input type="range" id="tok-slider" min="64" max="1024" value="256" step="64" class="bench-slider">
+                                        <div class="bench-slider-ticks"><span>64</span><span>256</span><span>512</span><span>1024</span></div>
+                                    </div>
+
+                                    <button class="btn-run-bench" id="btn-run-opsim">▶ Simulate System</button>
+                                </div>
+
+                                <!-- Right: Results -->
+                                <div class="opsim-results-panel">
+                                    <div class="bench-idle-state" id="opsim-idle">
+                                        <div class="bench-idle-gear">⬡</div>
+                                        <p>Design your AI stack and simulate to see latency breakdowns, throughput ceilings, bottleneck analysis, and hourly cost projections.</p>
+                                    </div>
+                                    <div id="opsim-live" style="display:none">
+                                        <div class="bench-live-header">
+                                            <span class="bench-stack-label" id="opsim-stack-label"></span>
+                                            <span class="bench-active-dot"></span>
+                                        </div>
+                                        <div class="opsim-pipeline" id="opsim-pipeline"></div>
+                                        <div class="opsim-lat-bar" id="opsim-lat-bar"></div>
+                                        <div class="bench-metrics-grid" id="opsim-metrics-grid">
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">E2E P95 Latency</div>
+                                                <div class="bmt-value"><span id="omt-lat">0</span><span class="bmt-unit"> ms</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar bmt-bar-lat" id="omt-lat-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="omt-lat-delta"></div>
+                                            </div>
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">Max Throughput</div>
+                                                <div class="bmt-value"><span id="omt-tput">0</span><span class="bmt-unit"> req/s</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar" id="omt-tput-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="omt-tput-delta"></div>
+                                            </div>
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">Infra Cost</div>
+                                                <div class="bmt-value"><span class="bmt-unit">$</span><span id="omt-cost">0</span><span class="bmt-unit">/hr</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar bmt-bar-mem" id="omt-cost-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="omt-cost-delta"></div>
+                                            </div>
+                                            <div class="bench-metric-tile">
+                                                <div class="bmt-label">Availability</div>
+                                                <div class="bmt-value"><span id="omt-avail">0</span><span class="bmt-unit">%</span></div>
+                                                <div class="bmt-bar-wrap"><div class="bmt-bar bmt-bar-eff" id="omt-avail-bar" style="width:0%"></div></div>
+                                                <div class="bmt-delta" id="omt-avail-delta"></div>
+                                            </div>
+                                        </div>
+                                        <div class="bench-insights" id="opsim-analysis"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO EXPERIENCE & EDUCATION SECTION -->
+        <section class="experience-section" id="experience">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;career_journey&gt;</span>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+
+            <div class="bento-grid exp-edu-grid">
+                
+                <!-- Left Box: Professional Experience (2 columns wide) -->
+                <div class="bento-card exp-card">
+                    <div class="exp-header-row">
+                        <h3 class="bento-card-title">Professional Experience</h3>
+                        <div class="exp-company-badge">VitaInspire Private Limited</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="timeline-title">Junior AI Engineer</span>
+                            <span class="timeline-date">Jan 2026 – Jul 2026</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <span class="bullet-highlight">Healthcare & Education Platforms:</span> 
+                                Developed AI-powered platforms integrating LLM-driven workflows, conversational systems, and intelligent automation for healthcare professionals and students.
+                            </li>
+                            <li>
+                                <span class="bullet-highlight">Self-Hosted Infrastructure:</span> 
+                                Designed and deployed self-hosted LLM infrastructure reducing reliance on expensive third-party APIs and improving deployment flexibility.
+                            </li>
+                            <li>
+                                <span class="bullet-highlight">Scalable APIs & Services:</span> 
+                                Built scalable AI backend services and RESTful APIs supporting production applications used by enterprise clients.
+                            </li>
+                            <li>
+                                <span class="bullet-highlight">Cross-functional Collaboration:</span> 
+                                Partnered with product teams to translate model evaluations into operational products, optimizing latency and accuracy.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Box: Education & Credentials (1 column) -->
+                <div class="bento-card edu-card">
+                    <h3 class="bento-card-title">Education</h3>
+                    <div class="edu-item">
+                        <div class="edu-icon-wrap">🎓</div>
+                        <div class="edu-details">
+                            <h4 class="edu-degree">B.Tech in Computer Science (AI & ML)</h4>
+                            <p class="edu-school">Marri Laxman Reddy Institute of Technology and Management</p>
+                            <span class="edu-score">CGPA: 7.7/10</span>
+                        </div>
+                    </div>
+
+                    <div class="credentials-divider"></div>
+
+                    <h3 class="bento-card-title mini">Certifications</h3>
+                    <div class="certifications-mini-grid">
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">🛡️</span>
+                            <div>
+                                <div class="cert-name">Professional Cybersecurity</div>
+                                <div class="cert-org">Google (Coursera)</div>
+                            </div>
+                        </div>
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">📈</span>
+                            <div>
+                                <div class="cert-name">Machine Learning</div>
+                                <div class="cert-org">Great Learning</div>
+                            </div>
+                        </div>
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">🧠</span>
+                            <div>
+                                <div class="cert-name">Artificial Intelligence</div>
+                                <div class="cert-org">Metvy Learning</div>
+                            </div>
+                        </div>
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">📊</span>
+                            <div>
+                                <div class="cert-name">Data Science & Analytics</div>
+                                <div class="cert-org">Simplilearn</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO PROJECTS SECTION -->
+        <section class="projects-section" id="projects">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;selected_architectures&gt;</span>
+                <h2 class="section-title">Selected AI Projects</h2>
+                <p class="section-description">High-performance AI platforms and workflows designed for scale.</p>
+            </div>
+
+            <div class="bento-grid projects-grid">
+                
+                <!-- Project 1: Self-Hosted Multimodal LLM -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Serving Infrastructure</span>
+                        <span class="project-number-tag">#01</span>
+                    </div>
+                    <h3 class="project-title">Self-Hosted Multimodal LLM Platform</h3>
+                    <p class="project-desc">
+                        Built and deployed an enterprise-grade multimodal LLM platform using vLLM and Hugging Face TGI serving local GPU clusters.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Optimized GPU performance using <strong>Paged Attention</strong>, continuous batching, and KV Cache management.</li>
+                        <li>Designed OpenAI & Gemini-compatible API endpoints for drag-and-drop replacement of external providers.</li>
+                        <li>Created internal authentication SDK for API-key validation and query rate-limiting.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">vLLM</span>
+                        <span class="tech-tag">TGI</span>
+                        <span class="tech-tag">HuggingFace</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">GPU serving</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Live Sync RAG -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Knowledge Retrieval</span>
+                        <span class="project-number-tag">#02</span>
+                    </div>
+                    <h3 class="project-title">Live Sync RAG Platform</h3>
+                    <p class="project-desc">
+                        Designed a production-ready Retrieval-Augmented Generation pipeline dynamically indexing enterprise knowledge in real time.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Engineered real-time semantic chunking, multi-layered text ingestion, and vector indexing.</li>
+                        <li>Created asynchronous workers processing files immediately upon modifications.</li>
+                        <li>Optimized vector retrievals achieving sub-50ms query latency on high-dimensional vectors.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Vector Databases</span>
+                        <span class="tech-tag">Asynchronous</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Multimodal Video-to-Video RAG -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Computer Vision & Audio</span>
+                        <span class="project-number-tag">#03</span>
+                    </div>
+                    <h3 class="project-title">Multimodal Video-to-Video RAG System</h3>
+                    <p class="project-desc">
+                        Developed a cross-modal AI system capable of ingestion, translation, reasoning, and generating video answers for training material.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Integrated audio transcription pipelines with video segment feature extractors.</li>
+                        <li>Designed dual vector indices for synchronized search across speech transcripts and visual sequences.</li>
+                        <li>Orchestrated workflows feeding visual tokens and transcriptions to multimodal LLMs for coherent generation.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">Multimodal AI</span>
+                        <span class="tech-tag">Video Segmenters</span>
+                        <span class="tech-tag">Speech Extraction</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI-Powered Telehealth -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Full-Stack AI Integration</span>
+                        <span class="project-number-tag">#04</span>
+                    </div>
+                    <h3 class="project-title">AI-Powered Telehealth Platform</h3>
+                    <p class="project-desc">
+                        Developed end-to-end telehealth interfaces providing workflow automation, medical triage assistant, and doctor panels.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Implemented secure, conversational EHR chatbots summarizing patient-doctor consultations.</li>
+                        <li>Designed automated backend queues for immediate medical triage categorization.</li>
+                        <li>Enhanced patient-engagement with real-time feedback systems based on workflow automation.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">EHR systems</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO SKILLS SECTION -->
+        <section class="skills-section" id="skills">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;stack_parameters&gt;</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+
+            <div class="bento-grid skills-grid">
+                <!-- Langs -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">💻</span>
+                        <h4>Languages</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">C#</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">Bash</span>
+                    </div>
+                </div>
+
+                <!-- Gen AI -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🤖</span>
+                        <h4>Generative AI</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">LLMs</span>
+                        <span class="skill-pill">RAG Pipelines</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">LangGraph</span>
+                        <span class="skill-pill">Prompt Eng</span>
+                        <span class="skill-pill">Fine-Tuning</span>
+                        <span class="skill-pill">LoRA</span>
+                        <span class="skill-pill">Vector DBs</span>
+                    </div>
+                </div>
+
+                <!-- Model Serving -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">⚡</span>
+                        <h4>Model Serving</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">vLLM</span>
+                        <span class="skill-pill">HuggingFace TGI</span>
+                        <span class="skill-pill">Paged Attention</span>
+                        <span class="skill-pill">KV Cache</span>
+                        <span class="skill-pill">Continuous Batching</span>
+                        <span class="skill-pill">Quantization</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">⚙️</span>
+                        <h4>Backend</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">Flask</span>
+                        <span class="skill-pill">ASP.NET Core</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🗄️</span>
+                        <h4>Databases</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">MySQL</span>
+                        <span class="skill-pill">SQL Server</span>
+                        <span class="skill-pill">Redis Cache</span>
+                    </div>
+                </div>
+
+                <!-- Devops / Infra -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">☁️</span>
+                        <h4>Cloud & DevOps</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">CI/CD Pipelines</span>
+                        <span class="skill-pill">AWS</span>
+                        <span class="skill-pill">GCP</span>
+                        <span class="skill-pill">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Core CS -->
+                <div class="bento-card skill-cat-card span-full-width">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">📚</span>
+                        <h4>Computer Science Foundations</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Data Structures</span>
+                        <span class="skill-pill">Algorithms</span>
+                        <span class="skill-pill">DBMS</span>
+                        <span class="skill-pill">Operating Systems</span>
+                        <span class="skill-pill">Computer Networks</span>
+                        <span class="skill-pill">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO ACHIEVEMENTS SECTION -->
+        <section class="achievements-section" id="achievements">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;highlights&gt;</span>
+                <h2 class="section-title">Achievements</h2>
+            </div>
+
+            <div class="bento-grid achievements-grid">
+                <div class="bento-card achievement-card">
+                    <div class="ach-icon">💡</div>
+                    <h4 class="ach-title">Innovation Bootcamp</h4>
+                    <p class="ach-desc">Selected for the prestigious National Innovation Design and Entrepreneurship Bootcamp in 2024.</p>
+                </div>
+                <div class="bento-card achievement-card">
+                    <div class="ach-icon">💻</div>
+                    <h4 class="ach-title">300+ Problems Solved</h4>
+                    <p class="ach-desc">Active competitor with 300+ solved algorithmic problems on LeetCode, HackerRank, and CodeChef.</p>
+                </div>
+                <div class="bento-card achievement-card">
+                    <div class="ach-icon">🎤</div>
+                    <h4 class="ach-title">AI Workshops & Mentoring</h4>
+                    <p class="ach-desc">Conducted hands-on AI/ML workshops, hackathons, and technology mentoring sessions for peers and students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;handshake_protocol&gt;</span>
+                <h2 class="section-title">Get in Touch</h2>
+            </div>
+
+            <div class="bento-card contact-card">
+                <div class="contact-content-grid">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <span class="term-status-dot green"></span>
+                            <span class="term-tab-name">contact_protocol.sh</span>
+                        </div>
+                        <div class="terminal-display">
+                            <div class="term-line"><span class="term-prompt">$</span> curl -X POST https://api.jashwanth.ai/v1/contact \</div>
+                            <div class="term-line">&nbsp;&nbsp;-H "Content-Type: application/json" \</div>
+                            <div class="term-line">&nbsp;&nbsp;-d '{"intent": "hire", "scope": "AI Backend / RAG Pipelines"}'</div>
+                            <div class="term-line output-line">&gt; Initiating handshakes... Connection established.</div>
+                            <div class="term-line output-line">&gt; Let's build something amazing together!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-panel">
+                        <h3 class="contact-heading">Dodda Jashwanth Sai</h3>
+                        <p class="contact-role">AI Engineer — GenAI Engineer — LLM Engineer — AI Platform Engineer</p>
+                        
+                        <div class="contact-links-grid">
+                            <a href="mailto:jashwanthsai678@gmail.com" class="contact-link-item" id="mail-link" data-tooltip="Click to Email">
+                                <span class="contact-icon">📧</span>
+                                <span class="contact-text">jashwanthsai678@gmail.com</span>
+                            </a>
+                            <a href="tel:+919177528667" class="contact-link-item" id="phone-link" data-tooltip="Click to Call">
+                                <span class="contact-icon">📱</span>
+                                <span class="contact-text">+91 91775 28667</span>
+                            </a>
+                            <a href="https://linkedin.com/in/djashwanthsai96" target="_blank" class="contact-link-item" id="linkedin-link" data-tooltip="Open Profile">
+                                <span class="contact-icon">💼</span>
+                                <span class="contact-text">LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/jashwanthsai678" target="_blank" class="contact-link-item" id="github-link" data-tooltip="Open Profile">
+                                <span class="contact-icon">🐙</span>
+                                <span class="contact-text">GitHub Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Dodda Jashwanth Sai. All Rights Reserved.</p>
+            <p class="infra-details">Sync RAG indexing tracer serves metadata locally.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
