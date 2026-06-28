@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodda Jashwanth Sai | AI Backend & LLM Infrastructure Engineer</title>
+    <meta name="description" content="Portfolio of Dodda Jashwanth Sai, Junior AI Engineer specializing in AI backend development, self-hosted LLM infrastructure optimization, and real-time Live Sync RAG pipelines.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Canvas for Particle Attention Space Background -->
+    <canvas id="bg-canvas"></canvas>
+    <!-- Terminal log scrolling background -->
+    <canvas id="bg-terminal" aria-hidden="true"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo" id="logo">
+                <span class="logo-accent">&lt;</span>
+                <span class="logo-text">Jashwanth.AI</span>
+                <span class="logo-accent">/&gt;</span>
+            </div>
+            <div class="nav-status-badge">
+                <span class="pulse-dot"></span>
+                <span>Serving Status: Active</span>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#playground" class="nav-link">Playground</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link cta-button">Let's Connect</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <!-- BENTO HERO SECTION -->
+        <section class="bento-grid hero-grid" id="about">
+            
+            <!-- Box 1: Core Hero Branding (Large) -->
+            <div class="bento-card hero-main-card">
+                <div class="badge-row">
+                    <span class="bento-badge glow-badge">AI Backend Developer</span>
+                    <span class="bento-badge">Machine Learning Engineer</span>
+                    <span class="bento-badge">Software Engineer</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name-glow">Dodda Jashwanth Sai</span>
+                </h1>
+                <h2 class="hero-subtitle">Engineering Scalable RAG Pipelines, Generative AI Applications, & High-Performance Serving Infrastructure.</h2>
+                <p class="hero-bio">
+                    AI Engineer with experience building production-grade Generative AI systems, self-hosted LLM platforms, 
+                    multimodal retrieval architectures, and AI-powered SaaS products. Specialized in backend engineering, RAG pipelines, 
+                    and deploying open-source LLMs using vLLM and Hugging Face TGI.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="btn-contact-hero">
+                        <span>Get In Touch</span>
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jashwanthsai678" target="_blank" class="btn btn-secondary" id="btn-github-hero">
+                        <svg class="icon-github" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Box 2: Profile Photo Placeholder / Cyber Visual (Medium) -->
+            <div class="bento-card profile-visual-card">
+                <div class="visual-header">
+                    <div class="window-dot red"></div>
+                    <div class="window-dot yellow"></div>
+                    <div class="window-dot green"></div>
+                    <span class="window-title">identity_service.py</span>
+                </div>
+                <div class="profile-display">
+                    <div class="scanner-line"></div>
+                    <div class="cyber-avatar">
+                        <svg class="pulse-ring" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="var(--color-primary-glow)" stroke-width="1.5" stroke-dasharray="6, 4"/>
+                        </svg>
+                        <div class="avatar-core">
+                            <span class="avatar-initials">DS</span>
+                        </div>
+                    </div>
+                    <div class="visual-meta">
+<div class="meta-line"><span class="label">LOC:</span> <span class="val">Hyderabad, IN</span></div>
+                        <div class="meta-line"><span class="label">ROLE:</span> <span class="val text-sage">AI_ENGINEER_V2</span></div>
+                        <div class="meta-line"><span class="label">STATUS:</span> <span class="val text-glow">OPEN_TO_WORK</span></div>
+                    </div>
+                    <div class="auth-key-box">
+                        <button class="btn-generate-key" id="btn-generate-key">Generate API Token</button>
+                        <code class="generated-key-display" id="key-display">sk_jashwanth_xxxxxxxx</code>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- BENTO PLAYGROUND SECTION -->
+        <section class="playground-section" id="playground">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;interactive_sandbox&gt;</span>
+                <h2 class="section-title">AI Playground Console</h2>
+                <p class="section-description">Query my background via the Chat Console.</p>
+            </div>
+
+            <div class="bento-card playground-card">
+                <!-- Persona Switcher -->
+                <div class="persona-switcher">
+                    <span class="persona-label">View as:</span>
+                    <button class="persona-btn active" data-persona="hiring-manager">Hiring Manager</button>
+                    <button class="persona-btn" data-persona="tech-lead">Technical Lead</button>
+                    <button class="persona-btn" data-persona="hr-recruiter">HR Recruiter</button>
+                </div>
+                <!-- Terminal Playground -->
+                <div class="playground-layout">
+                    <div class="console-panel">
+
+                        <div class="console-header">
+                            <div class="console-tabs">
+                                <button class="console-tab active" id="tab-chat" data-tab="chat">
+                                    <span class="tab-icon">💬</span> Chat Console
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Chat Terminal -->
+                        <div class="tab-content active" id="content-chat">
+                            <div class="terminal-body" id="terminal-body">
+                                <div class="terminal-line system-msg">
+                                    <span class="term-time">[19:40:21]</span> [SYSTEM] Jashwanth Inference Server loaded successfully.
+                                </div>
+                                <div class="terminal-line system-msg">
+                                    <span class="term-time">[19:40:22]</span> [SYSTEM] Self-hosted Llama-3-8B model instantiated using vLLM engine.
+                                </div>
+                                <div class="terminal-line system-msg-info">
+                                    <span class="term-time">[19:40:22]</span> [INFO] Click a prompt chip below — or type a command (try: <span style="color:var(--color-primary)">help</span>).
+                                </div>
+                            </div>
+                            <div class="terminal-input-bar">
+                                <span class="prompt-arrow">&gt;&gt;&gt;</span>
+                                <input type="text" class="terminal-input" id="terminal-input" placeholder="Type a command or select a chip... (try: help)">
+                                <button class="btn-send-prompt" id="btn-send-prompt">Run</button>
+                            </div>
+                            <div class="prompt-chips">
+                                <button class="chip" data-prompt="bio">Who is Jashwanth Sai?</button>
+                                <button class="chip" data-prompt="skills">List core technical skills</button>
+                                <button class="chip" data-prompt="experience">What did Jashwanth build?</button>
+                                <button class="chip" data-prompt="projects">Summarize his selected projects</button>
+                                <button class="chip" data-prompt="llmserving">How does he serve LLMs in production?</button>
+                                <button class="chip" data-prompt="ragarch">Explain his RAG pipeline design</button>
+                            </div>
+                            <div class="console-transparency-note">
+                                // responses are pre-authored; streaming simulates the vLLM inference pipeline I work with daily
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Job Fit Analyzer -->
+                    <div class="jd-analyzer-panel">
+                        <div class="console-header">
+                            <div class="console-tabs">
+                                <div class="console-tab active" style="cursor:default;">
+                                    <span class="tab-icon">🎯</span> Job Fit Analyzer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jd-analyzer-body">
+                            <div class="jd-input-section">
+                                <p class="jd-label">Paste a job description — see how well I fit.</p>
+                                <textarea class="jd-textarea" id="jd-textarea" placeholder="e.g. We're looking for a Senior AI Engineer with experience in LLMs, RAG pipelines, FastAPI, and cloud deployment on AWS..."></textarea>
+                                <button class="btn-analyze" id="btn-analyze">
+                                    <span>Analyze Fit</span>
+                                    <svg width="14" height="14" viewBox="0 0 20 20" fill="none">
+                                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="jd-results" id="jd-results"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO EXPERIENCE & EDUCATION SECTION -->
+        <section class="experience-section" id="experience">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;career_journey&gt;</span>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+
+            <div class="bento-grid exp-edu-grid">
+                
+                <!-- Left Box: Professional Experience (2 columns wide) -->
+                <div class="bento-card exp-card">
+                    <div class="exp-header-row">
+                        <h3 class="bento-card-title">Professional Experience</h3>
+                        <div class="exp-company-badge">VitaInspire Private Limited</div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-meta">
+                            <span class="timeline-title">Junior AI Engineer</span>
+                            <span class="timeline-date">Jan 2026 – Jul 2026</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>
+                                <span class="bullet-highlight">Healthcare & Education Platforms:</span> 
+                                Developed AI-powered platforms integrating LLM-driven workflows, conversational systems, and intelligent automation for healthcare professionals and students.
+                            </li>
+                            <li>
+                                <span class="bullet-highlight">Self-Hosted Infrastructure:</span> 
+                                Designed and deployed self-hosted LLM infrastructure reducing reliance on expensive third-party APIs and improving deployment flexibility.
+                            </li>
+                            <li>
+                                <span class="bullet-highlight">Scalable APIs & Services:</span> 
+                                Built scalable AI backend services and RESTful APIs supporting production applications used by enterprise clients.
+                            </li>
+                            <li>
+                                <span class="bullet-highlight">Cross-functional Collaboration:</span> 
+                                Partnered with product teams to translate model evaluations into operational products, optimizing latency and accuracy.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Box: Education & Credentials (1 column) -->
+                <div class="bento-card edu-card">
+                    <h3 class="bento-card-title">Education</h3>
+                    <div class="edu-item">
+                        <div class="edu-icon-wrap">🎓</div>
+                        <div class="edu-details">
+                            <h4 class="edu-degree">B.Tech in Computer Science (AI & ML)</h4>
+                            <p class="edu-school">Marri Laxman Reddy Institute of Technology and Management</p>
+                            <span class="edu-score">CGPA: 7.7/10</span>
+                        </div>
+                    </div>
+
+                    <div class="credentials-divider"></div>
+
+                    <h3 class="bento-card-title mini">Certifications</h3>
+                    <div class="certifications-mini-grid">
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">🛡️</span>
+                            <div>
+                                <div class="cert-name">Professional Cybersecurity</div>
+                                <div class="cert-org">Google (Coursera)</div>
+                            </div>
+                        </div>
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">📈</span>
+                            <div>
+                                <div class="cert-name">Machine Learning</div>
+                                <div class="cert-org">Great Learning</div>
+                            </div>
+                        </div>
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">🧠</span>
+                            <div>
+                                <div class="cert-name">Artificial Intelligence</div>
+                                <div class="cert-org">Metvy Learning</div>
+                            </div>
+                        </div>
+                        <div class="cert-item-mini">
+                            <span class="cert-icon-mini">📊</span>
+                            <div>
+                                <div class="cert-name">Data Science & Analytics</div>
+                                <div class="cert-org">Simplilearn</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO PROJECTS SECTION -->
+        <section class="projects-section" id="projects">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;selected_architectures&gt;</span>
+                <h2 class="section-title">Selected AI Projects</h2>
+                <p class="section-description">High-performance AI platforms and workflows designed for scale.</p>
+            </div>
+
+            <div class="bento-grid projects-grid">
+                
+                <!-- Project 1: Self-Hosted Multimodal LLM -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Serving Infrastructure</span>
+                        <span class="project-number-tag">#01</span>
+                    </div>
+                    <h3 class="project-title">Self-Hosted Multimodal LLM Platform</h3>
+                    <p class="project-desc">
+                        Built and deployed a self-hosted multimodal LLM platform using vLLM and Hugging Face TGI on local GPU clusters.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Optimized GPU performance using <strong>Paged Attention</strong>, continuous batching, and KV Cache management.</li>
+                        <li>Designed OpenAI & Gemini-compatible API endpoints for drag-and-drop replacement of external providers.</li>
+                        <li>Created internal authentication SDK for API-key validation and query rate-limiting.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">vLLM</span>
+                        <span class="tech-tag">TGI</span>
+                        <span class="tech-tag">HuggingFace</span>
+                        <span class="tech-tag">GPU serving</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Live Sync RAG -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Knowledge Retrieval</span>
+                        <span class="project-number-tag">#02</span>
+                    </div>
+                    <h3 class="project-title">Live Sync RAG Platform</h3>
+                    <p class="project-desc">
+                        Designed a production-ready Retrieval-Augmented Generation pipeline dynamically indexing enterprise knowledge in real time.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Engineered real-time semantic chunking, multi-layered text ingestion, and vector indexing.</li>
+                        <li>Created asynchronous workers processing files immediately upon modifications.</li>
+                        <li>Optimized vector retrievals for low-latency nearest-neighbor search on high-dimensional embeddings.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Vector Databases</span>
+                        <span class="tech-tag">Asynchronous</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Multimodal Video-to-Video RAG -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Computer Vision & Audio</span>
+                        <span class="project-number-tag">#03</span>
+                    </div>
+                    <h3 class="project-title">Multimodal Video-to-Video RAG System</h3>
+                    <p class="project-desc">
+                        Developed a cross-modal AI system capable of ingestion, translation, reasoning, and generating video answers for training material.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Integrated audio transcription pipelines with video segment feature extractors.</li>
+                        <li>Designed dual vector indices for synchronized search across speech transcripts and visual sequences.</li>
+                        <li>Orchestrated workflows feeding visual tokens and transcriptions to multimodal LLMs for coherent generation.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">Multimodal AI</span>
+                        <span class="tech-tag">Video Segmenters</span>
+                        <span class="tech-tag">Speech Extraction</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: AI-Powered Telehealth -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">Full-Stack AI Integration</span>
+                        <span class="project-number-tag">#04</span>
+                    </div>
+                    <h3 class="project-title">AI-Powered Telehealth Platform</h3>
+                    <p class="project-desc">
+                        Developed end-to-end telehealth interfaces providing workflow automation, medical triage assistant, and doctor panels.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Implemented secure, conversational EHR chatbots summarizing patient-doctor consultations.</li>
+                        <li>Designed automated backend queues for immediate medical triage categorization.</li>
+                        <li>Enhanced patient-engagement with real-time feedback systems based on workflow automation.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">LangGraph</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">EHR systems</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                </div>
+
+                <!-- Project 5: EduTeach -->
+                <div class="bento-card project-card">
+                    <div class="project-card-header">
+                        <span class="project-tag">EdTech · AI Platform</span>
+                        <span class="project-number-tag">#05</span>
+                    </div>
+                    <h3 class="project-title">EduTeach — AI Teacher Tool</h3>
+                    <p class="project-desc">
+                        Built an AI-powered platform for school teachers that automates daily classroom workflows — from generating lesson plans to grading papers and tracking student performance.
+                    </p>
+                    <ul class="project-details-list">
+                        <li>Developed an <strong>AI Lesson Plan Generator</strong> using a specialized prompting pipeline running on self-hosted open-source LLMs, reducing planning time significantly for low-level school teachers.</li>
+                        <li>Built a <strong>Student Performance Dashboard</strong> with analytics, progress tracking, and trend visualization per student and class.</li>
+                        <li>Engineered an <strong>AI Paper Correction Pipeline</strong> leveraging a custom open-source model pipeline for automated grading and per-question feedback generation.</li>
+                        <li>Deployed open-source LLMs on <strong>AWS EC2</strong> and integrated the inference endpoints directly into the application backend.</li>
+                        <li>Used <strong>Supabase</strong> as the primary database for real-time data sync, row-level auth, and teacher/student record management.</li>
+                    </ul>
+                    <div class="project-tech-row">
+                        <span class="tech-tag">AWS EC2</span>
+                        <span class="tech-tag">Open-Source LLMs</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LangChain</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BENTO SKILLS SECTION -->
+        <section class="skills-section" id="skills">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;stack_parameters&gt;</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+
+            <div class="bento-grid skills-grid">
+                <!-- Langs -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">💻</span>
+                        <h4>Languages</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">C#</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">Bash</span>
+                    </div>
+                </div>
+
+                <!-- Gen AI -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🤖</span>
+                        <h4>Generative AI</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">LLMs</span>
+                        <span class="skill-pill">RAG Pipelines</span>
+                        <span class="skill-pill">LangChain</span>
+                        <span class="skill-pill">LangGraph</span>
+                        <span class="skill-pill">Prompt Eng</span>
+                        <span class="skill-pill">Fine-Tuning</span>
+                        <span class="skill-pill">LoRA</span>
+                        <span class="skill-pill">Vector DBs</span>
+                    </div>
+                </div>
+
+                <!-- Model Serving -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">⚡</span>
+                        <h4>Model Serving</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">vLLM</span>
+                        <span class="skill-pill">HuggingFace TGI</span>
+                        <span class="skill-pill">Paged Attention</span>
+                        <span class="skill-pill">KV Cache</span>
+                        <span class="skill-pill">Continuous Batching</span>
+                        <span class="skill-pill">Quantization</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">⚙️</span>
+                        <h4>Backend</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">FastAPI</span>
+                        <span class="skill-pill">Flask</span>
+                        <span class="skill-pill">ASP.NET Core</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">Microservices</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🗄️</span>
+                        <h4>Databases</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Supabase</span>
+                        <span class="skill-pill">MongoDB</span>
+                        <span class="skill-pill">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Devops / Infra -->
+                <div class="bento-card skill-cat-card">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">☁️</span>
+                        <h4>Cloud & DevOps</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Docker</span>
+                        <span class="skill-pill">CI/CD Pipelines</span>
+                        <span class="skill-pill">AWS</span>
+                        <span class="skill-pill">GCP</span>
+                        <span class="skill-pill">Linux</span>
+                    </div>
+                </div>
+
+                <!-- Core CS -->
+                <div class="bento-card skill-cat-card span-full-width">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">📚</span>
+                        <h4>Computer Science Foundations</h4>
+                    </div>
+                    <div class="skills-pills">
+                        <span class="skill-pill">Data Structures</span>
+                        <span class="skill-pill">Algorithms</span>
+                        <span class="skill-pill">DBMS</span>
+                        <span class="skill-pill">Operating Systems</span>
+                        <span class="skill-pill">Computer Networks</span>
+                        <span class="skill-pill">System Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO ACHIEVEMENTS SECTION -->
+        <section class="achievements-section" id="achievements">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;highlights&gt;</span>
+                <h2 class="section-title">Achievements</h2>
+            </div>
+
+            <div class="bento-grid achievements-grid">
+                <div class="bento-card achievement-card">
+                    <div class="ach-icon">💡</div>
+                    <h4 class="ach-title">Innovation Bootcamp</h4>
+                    <p class="ach-desc">Selected for the prestigious National Innovation Design and Entrepreneurship Bootcamp in 2024.</p>
+                </div>
+                <div class="bento-card achievement-card">
+                    <div class="ach-icon">💻</div>
+                    <h4 class="ach-title">300+ Problems Solved</h4>
+                    <p class="ach-desc">Active competitor with 300+ solved algorithmic problems on LeetCode, HackerRank, and CodeChef.</p>
+                </div>
+                <div class="bento-card achievement-card">
+                    <div class="ach-icon">🎤</div>
+                    <h4 class="ach-title">AI Workshops & Mentoring</h4>
+                    <p class="ach-desc">Conducted hands-on AI/ML workshops, hackathons, and technology mentoring sessions for peers and students.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENTO CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="section-title-wrapper">
+                <span class="section-tag">&lt;handshake_protocol&gt;</span>
+                <h2 class="section-title">Get in Touch</h2>
+            </div>
+
+            <div class="bento-card contact-card">
+                <div class="contact-content-grid">
+                    <div class="contact-terminal">
+                        <div class="terminal-header">
+                            <span class="term-status-dot green"></span>
+                            <span class="term-tab-name">contact_protocol.sh</span>
+                        </div>
+                        <div class="terminal-display">
+                            <div class="term-line"><span class="term-prompt">$</span> curl -X POST https://api.jashwanth.ai/v1/contact \</div>
+                            <div class="term-line">&nbsp;&nbsp;-H "Content-Type: application/json" \</div>
+                            <div class="term-line">&nbsp;&nbsp;-d '{"intent": "hire", "scope": "AI Backend / RAG Pipelines"}'</div>
+                            <div class="term-line output-line">&gt; Initiating handshakes... Connection established.</div>
+                            <div class="term-line output-line">&gt; Let's build something amazing together!</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-panel">
+                        <h3 class="contact-heading">Dodda Jashwanth Sai</h3>
+                        <p class="contact-role">AI Engineer — GenAI Engineer — LLM Engineer — AI Platform Engineer</p>
+                        
+                        <div class="contact-links-grid">
+                            <a href="mailto:jashwanthsai678@gmail.com" class="contact-link-item" id="mail-link" data-tooltip="Click to Email">
+                                <span class="contact-icon">📧</span>
+                                <span class="contact-text">jashwanthsai678@gmail.com</span>
+                            </a>
+                            <a href="tel:+919177528667" class="contact-link-item" id="phone-link" data-tooltip="Click to Call">
+                                <span class="contact-icon">📱</span>
+                                <span class="contact-text">+91 91775 28667</span>
+                            </a>
+                            <a href="https://linkedin.com/in/djashwanthsai96" target="_blank" class="contact-link-item" id="linkedin-link" data-tooltip="Open Profile">
+                                <span class="contact-icon">💼</span>
+                                <span class="contact-text">LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/jashwanthsai678" target="_blank" class="contact-link-item" id="github-link" data-tooltip="Open Profile">
+                                <span class="contact-icon">🐙</span>
+                                <span class="contact-text">GitHub Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2026 Dodda Jashwanth Sai. All Rights Reserved.</p>
+            <p class="infra-details">Sync RAG indexing tracer serves metadata locally.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
