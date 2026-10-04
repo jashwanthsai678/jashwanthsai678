@@ -2,13 +2,13 @@
 
 <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0ea5e9,100:8b5cf6&height=150&section=header&text=Dodda%20Jashwanth%20Sai&fontSize=40&fontColor=ffffff&fontAlignY=45&desc=AI%20Engineer%20%C2%B7%20LLM%20Infrastructure%20%C2%B7%20RAG%20%C2%B7%20Agents&descSize=16&descAlignY=68" alt="Dodda Jashwanth Sai - AI Engineer" width="100%" />
 
-<a href="https://github.com/YOUR_GITHUB_USERNAME">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1400&color=22D3EE&center=true&vCenter=true&width=620&lines=Serving+LLMs+on+my+own+GPUs+with+vLLM;Building+RAG+pipelines+that+stay+in+sync;Shipping+agentic+workflows+to+real+users" alt="Serving LLMs with vLLM, building RAG pipelines, shipping agentic workflows" />
+<a href="https://github.com/jashwanthsai678">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&pause=1400&color=22D3EE&center=true&vCenter=true&width=620&lines=Serving+LLMs+on+own+GPUs;Building+RAG+pipelines+Agentic and AI pipelines;Shipping+agentic+workflows+to+real+users" alt="Serving LLMs, building RAG pipelines, shipping agentic workflows" />
 </a>
 
 <br/><br/>
 
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/djashwanthsai96"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:Jashwanthsai678@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
 <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=flat-square&color=8b5cf6&label=VIEWS" alt="Profile Views" />
 
